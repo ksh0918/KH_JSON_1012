@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <div>
+                <label>
+                    <p>아이디</p>
+                    <input type="text" name="userId" id="userId" required><p class="warning"></p>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <p>패스워드</p>
+                    <input type="password" name="userPwd" id="userPwd" required><p class="warning"></p>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <p>패스워드 확인</p>
+                    <input type="password" name="userPwdCheck" id="userPwdCheck" required><p class="warning"></p>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <p>이메일</p>
+                    <input type="email" name="userEmail" id="userEmail"><span>@</span>
+                    <input type="email" name="userEmailSub" id="userEmailSub">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <p>주소</p>
+                    <input type="text" name="userAddress" id="userAddress"><br>
+                    <input type="text" name="userAddressDetail" id="userAddressDetail">
+                </label>
+            </div>
+            <button>가입</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

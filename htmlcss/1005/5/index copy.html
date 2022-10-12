@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 100px; height: 30px;
+            color: white;
+            border: none;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        div>button:first-child{
+            background-color: green;
+        }
+        div>button:nth-child(2){
+            background-color: orange;
+        }
+        div>button:nth-child(3){
+            background-color: purple;
+        }
+        .btbg{
+            margin-top: 10px;
+            width:305px;
+            height: 220px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button>Green</button>
+        <button>Orange</button>
+        <button>Purple</button>
+    </div>
+    <div class="btbg"></div>
+    <script>
+        let btn = document.querySelectorAll("div>button");
+        let bgcolor;
+        btn.forEach(function(e){
+            e.onclick = () => {
+                bgcolor = e.innerText.toLowerCase();
+                document.querySelector(".btbg").style.background = bgcolor;
+            }
+        })
+    </script>
+</body>
+</html>

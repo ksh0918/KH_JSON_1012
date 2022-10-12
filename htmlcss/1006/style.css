@@ -1,0 +1,13 @@
+*{margin: 0; padding: 0; color: #333; font-size: 14px;}
+
+h2{width: 100%; background-color: royalblue; text-align: center;line-height: 48px;font-size: 18px; color: white;}
+
+input{padding:5px; width:235px; border: none; border-bottom: 3px solid #dfdfdf; }
+input:focus{background-color: #f0f0f0; border-bottom: 3px solid royalblue;}
+button{vertical-align: middle; padding: 6.5px 10px; border: 1px solid royalblue; border-radius: 3px; background-color: white; color:royalblue; font-weight: 700;}
+button:hover{background-color: #dfdfdf;}
+label>button{margin-left: 5px;}
+form{width: 310px; margin: 0 auto; padding: 25px;}
+form>button{width: 300px;}
+form>button:disabled{border: 1px solid gray; background-color: #f0f0f0; color: gray;}
+p{letter-spacing: -1px; font-size: 12px; margin: 3px 0 8px; width: 245px; text-align: right; color: #aaa;}

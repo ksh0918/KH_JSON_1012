@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>기본정보</legend>
+            <p>
+                <label>아이디<input type="text" name="id" value="hello" readonly></label>
+            </p>
+            <p>
+                <label for="password">패스워드</label>
+                <input type="password" name="pwd" id="password" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>세부정보</legend>
+            <p>
+                <label for="email">이메일<input type="email" placeholder="@ 필수" id="email"></label>
+            </p>
+            <p>
+                <label for="tel">전화번호<input type="tel" placeholder="숫자만 입력" id="tel"></label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>주소</legend>
+            <label>
+                <select name="city" id="city" multiple>
+                    <optgroup label="서울시">
+                        <option value="강남구">강남구</option>
+                        <option value="서초구">서초구</option>
+                        <option value="강동구">강동구</option>
+                        <option value="영등포구">영등포구</option>
+                        <option value="용산구">용산구</option>
+                        <option value="중구">중구</option>
+                        <option value="강북구">강북구</option>
+                    </optgroup>
+                    <optgroup label="경기도">
+                        <option value="성남시">성남시</option>
+                        <option value="수원시">수원시</option>
+                        <option value="용인시">용인시</option>
+                        <option value="안양시">안양시</option>
+                        <option value="화성시">화성시</option>
+                        <option value="과천시">과천시</option>
+                        <option value="시흥시">시흥시</option>
+                    </optgroup>
+                </select>
+            </label>
+        </fieldset>
+        <p>
+            <label for="addr">주소<input type="text" value="서울시" id="addr"></label>
+        </p>
+        <fieldset>
+            <legend>성별</legend>
+            <label for="male">남성</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">여성</label>
+            <input type="radio" name="gender" id="female">
+        </fieldset>
+        <fieldset>
+            <legend>직업</legend>
+            <label for="student">학생</label>
+            <input type="radio" name="jobs" id="student">
+            <label for="worker">회사원</label>
+            <input type="radio" name="jobs" id="worker">
+            <label for="housewife">주부</label>
+            <input type="radio" name="jobs" id="housewife">
+            <label for="none">무직</label>
+            <input type="radio" name="jobs" id="none">
+        </fieldset>
+        <fieldset>
+            <legend>취미 선택</legend>
+            <p>
+                <label for="sports">운동<input type="radio" name="sports" id="sports"></label>
+                <label for="music">음악<input type="radio" name="music" id="music"></label>
+                <label for="cook">요리<input type="radio" name="cook" id="cook"></label>
+            </p>
+        </fieldset>
+        <p>가입일<input type="date"></p>
+        <p>
+            <label for="desc">소개글<br><textarea name="desc" id="desc" cols="100" rows="10"></textarea></label></label>
+        </p>
+        <button type="reset">초기화</button>
+        <button type="submit">제출<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/480px-Instagram-Icon.png" height="8px" width="8px" alt="">
+        </button>
+    </form>
+</body>
+</html>

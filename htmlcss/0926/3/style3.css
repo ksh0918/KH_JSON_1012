@@ -1,0 +1,13 @@
+.grid-container{
+    display: grid;
+    gap:10px;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-rows: 100px 1fr 100fr;
+}
+.grid-item{
+    color: white;
+    background-color: royalblue;
+}
+.grid-item:nth-child(2n){
+    background-color: orangered;
+}
